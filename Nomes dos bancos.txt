@@ -1,0 +1,44 @@
+Postgres
+
+Entidade Venda
+Banco: venda
+TABLE: venda
+id_venda serial,
+cpf char(11),
+pedido varchar(350),
+valortotal double precision
+entrega varchar(15),
+data date
+
+Entidade Cliente
+Banco: cliente
+Table: cliente
+id_cliente serial,
+nome varchar(100),
+email varchar(120),
+cpf char(11),
+endereco varchar(150)
+
+Entidade Fornecedor
+Banco: fornecedor
+Table: fornecedor
+id_fornecedor serial,
+pedido varchar(350),
+data date
+
+Entidade Produto
+Banco: produto
+Table: produto
+id_produto serial,
+nome varchar(120),
+valor double precision,
+codigo varchar(100)
+
+Entidade Funcionario
+Banco: funcionario
+Table: funcionario
+id_funcionario serial,
+nome varchar(100),
+salario double precision
+categoria varchar(120),
+CPF char(11)
